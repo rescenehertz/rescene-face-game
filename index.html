@@ -278,6 +278,27 @@
       margin-top: -6px;
     }
 
+    .modeSwitch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.modeBtn {
+  background: transparent;
+  color: var(--mainColor);
+  border: 2px solid var(--mainColor);
+  font-size: 15px;
+  font-weight: 900;
+  padding: 14px 10px;
+}
+
+.modeBtn:hover {
+  background: var(--mainColor);
+  color: #111;
+}
+
     @media (min-width: 768px) {
       .app {
         max-width: 520px;
@@ -388,6 +409,22 @@
       <p id="shareStatus" class="shareStatus"></p>
     </div>
 
+    <div class="modeSwitch">
+  <button
+    class="modeBtn"
+    onclick="location.href='https://rescenehertz.github.io/rescene-face-game/'"
+  >
+    일반 모드(현재)
+  </button>
+
+  <button
+    class="modeBtn"
+    onclick="location.href='https://rescenehertz.github.io/rescene-face-game-rank/'"
+  >
+    경쟁전
+  </button>
+</div>
+
     <footer class="footerNotice">
       <p>본 게임은 수익을 창출하지 않습니다.</p>
       <p>
@@ -403,7 +440,7 @@
       </p>
 
       <p class="versionText">
-        Version 1.0
+        Version 1.1
       </p>
     </footer>
 
